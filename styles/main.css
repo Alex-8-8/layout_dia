@@ -72,6 +72,8 @@
     transition: background-color 0.2s ease-in-out; }
     .header-introduction__btn:hover {
       background-color: #ff7c6e; }
+    .header-introduction__btn:focus {
+      outline: none; }
 
 .header-slider {
   display: -webkit-box;
@@ -81,9 +83,11 @@
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 48px;
-  width: 687px;
+  width: 40vw;
   height: 680px;
   background-image: url("../images/slider/slider-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   bottom: 0;
   right: 0; }
@@ -141,7 +145,7 @@
   width: 264px;
   margin: 0; }
 
-.header-nav-block {
+.header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,26 +154,27 @@
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
-  .header-nav-block__item {
+          align-items: center;
+  font-size: 13px; }
+  .header-nav__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .header-nav-block__logo {
+  .header-nav__logo {
     margin-right: 64px;
     display: inline-block;
     vertical-align: middle; }
-  .header-nav-block__link {
+  .header-nav__link {
     height: 150px;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 150px;
     letter-spacing: 3px;
     position: relative; }
-    .header-nav-block__link--active:hover::after {
+    .header-nav__link--active:hover::after {
       content: "";
       position: absolute;
       bottom: 50px;
@@ -179,7 +184,7 @@
       border-radius: 4px;
       display: block; }
 
-.nav-list {
+.nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,16 +193,17 @@
           align-items: center;
   margin: 0;
   height: 150px; }
-  .nav-list__item {
-    margin-right: 64px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 3px;
-    height: 100%; }
-    .nav-list__item:hover {
-      color: #dedede; }
-  .nav-list__link {
-    line-height: 150px; }
+
+.nav__item {
+  margin-right: 64px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px; }
+  .nav__item:hover {
+    color: #dedede; }
+
+.nav__link {
+  line-height: 50px; }
 
 body {
   background: #e5e5e5;
