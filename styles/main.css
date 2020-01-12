@@ -5,6 +5,12 @@
   font-style: normal; }
 
 @font-face {
+  font-family: "Open Sans-semi";
+  src: url("../fonts/OpenSans-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Regular.ttf");
   font-weight: normal;
@@ -47,10 +53,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 120px; }
+  margin-top: 150px; }
   .header-introduction__title {
     font-weight: 600;
     font-size: 64px;
+    line-height: 68px;
     margin: 0 0 32px; }
   .header-introduction__motto {
     font-family: "Open Sans", sans-serif;
@@ -84,7 +91,7 @@
           align-items: flex-end;
   padding: 48px;
   width: 40vw;
-  height: 680px;
+  height: 830px;
   background-image: url("../images/slider/slider-img.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -205,8 +212,195 @@
 .nav__link {
   line-height: 50px; }
 
+.welcome {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .welcome__wrapper {
+    margin: 0 auto;
+    height: 210px;
+    width: 754px; }
+  .welcome__title {
+    font-size: 32px;
+    font-family: "Poppins-Semibold", sans-serif;
+    margin: 0 0 16px; }
+  .welcome__text {
+    font-size: 24px;
+    font-family: "Open Sans-semi", sans-serif;
+    color: #6c788b;
+    margin: 0; }
+
+.services {
+  width: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 759px; }
+  .services__wrapper {
+    width: 1146px;
+    height: 355px; }
+  .services__title {
+    text-align: center;
+    font-size: 52px;
+    font-family: "Open Sans-semi", sans-serif;
+    margin: 0 0 64px; }
+
+.services-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .services-box__card {
+    width: 264px;
+    text-align: center; }
+  .services-box__image {
+    margin-bottom: 40px; }
+  .services-box__title {
+    font-family: "Poppins-Semibold", sans-serif;
+    margin: 0 0 16px;
+    font-size: 20px; }
+  .services-box__description {
+    font-size: 14px;
+    color: #6c788b;
+    margin: 0;
+    font-family: "Open Sans", sans-serif; }
+
+.process {
+  height: 750px;
+  padding-top: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .process__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    width: 1146px; }
+
+.process-box {
+  max-width: 362px;
+  margin-top: 100px; }
+  .process-box__process {
+    font-family: "Poppins-bold", sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #c0cdd7;
+    margin: 0 0 16px; }
+  .process-box__title {
+    font-family: "Poppins-Semibold", sans-serif;
+    color: #253757;
+    font-size: 32px;
+    margin: 0 0 24px; }
+  .process-box__text {
+    font-family: "Open Sans", sans-serif;
+    color: #6c788b;
+    font-size: 14px;
+    line-height: 150%; }
+
+.offer-box {
+  max-width: 560px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 264px);
+  grid-template-rows: repeat(auto-fill, 264px);
+  grid-gap: 30px; }
+  .offer-box__offers {
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 32px; }
+  .offer-box__offers:nth-child(1), .offer-box__offers:nth-child(3) {
+    -webkit-transform: translateY(148px);
+            transform: translateY(148px); }
+  .offer-box__number {
+    width: 46px;
+    border-radius: 23px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-family: "Poppins-Semibold", sans-serif;
+    margin: 0 0 24px; }
+    .offer-box__number--001 {
+      background: rgba(86, 204, 242, 0.1);
+      color: #56ccf2; }
+    .offer-box__number--002 {
+      background: rgba(252, 201, 29, 0.1);
+      color: #fcc91d; }
+    .offer-box__number--003 {
+      background: rgba(21, 216, 80, 0.1);
+      color: #15d850; }
+    .offer-box__number--004 {
+      background: rgba(243, 99, 99, 0.1);
+      color: #f36363; }
+  .offer-box__description {
+    font-size: 13px;
+    color: #6c788b;
+    line-height: 150%;
+    margin: 0 0 32px;
+    font-family: "Open Sans-semi", sans-serif; }
+  .offer-box__more {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative; }
+    .offer-box__more::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/process/learn-more-arrow.svg");
+      height: 16px;
+      width: 16px;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+    .offer-box__more::after {
+      content: "Learn more";
+      position: absolute;
+      font-family: "Poppins-Semibold", sans-serif;
+      white-space: nowrap;
+      top: 50%;
+      left: 56px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .offer-box__more--1 {
+      background: #56ccf2; }
+    .offer-box__more--2 {
+      background: #fcc91d; }
+    .offer-box__more--3 {
+      background: #15d850; }
+    .offer-box__more--4 {
+      background: #f36363; }
+
+.approach__wrapper {
+  background-color: #ff9c8e;
+  width: 1479px;
+  height: 976px;
+  margin-left: auto;
+  border-bottom-left-radius: 300px;
+  border-top-left-radius: 300px; }
+
 body {
-  background: #e5e5e5;
+  background: #f2f9ff;
   margin: 0; }
 
 * {
