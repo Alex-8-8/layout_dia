@@ -481,7 +481,8 @@
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
   .approach-sub-block__text {
-    max-width: 264px; }
+    max-width: 264px;
+    font-family: "Open Sans", sans-serif; }
 
 .approach-sub-block:not(:last-child) {
   margin-bottom: 64px; }
