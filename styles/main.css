@@ -465,7 +465,10 @@
 .approach-sub-block {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .approach-sub-block__circle {
     display: inline-block;
     width: 64px;
