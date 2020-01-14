@@ -309,7 +309,8 @@
     width: 264px;
     text-align: center; }
   .services-box__image {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    border-radius: 24px; }
   .services-box__title {
     font-family: "Poppins-Semibold", sans-serif;
     margin: 0 0 16px;
@@ -431,12 +432,332 @@
     .offer-box__more--4 {
       background: #f36363; }
 
-.approach__wrapper {
-  background-color: #ff9c8e;
-  height: 976px;
-  margin-left: auto;
-  border-bottom-left-radius: 300px;
-  border-top-left-radius: 300px; }
+.approach {
+  position: relative;
+  z-index: -1; }
+  .approach__wrapper {
+    background-color: #ff9c8e;
+    height: 976px;
+    margin-left: 120px;
+    border-bottom-left-radius: 300px;
+    border-top-left-radius: 300px;
+    padding: 204px 0 0 204px; }
+  .approach__image {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+.approach-block {
+  color: #fff; }
+  .approach-block__approach {
+    font-family: "Poppins-bold", sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 0 16px; }
+  .approach-block__title {
+    font-family: "Poppins-Semibold", sans-serif;
+    font-size: 32px;
+    line-height: 150%;
+    margin: 0 0 32px; }
+
+.approach-sub-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .approach-sub-block__circle {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 34px;
+    position: relative; }
+  .approach-sub-block__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .approach-sub-block__text {
+    max-width: 264px; }
+
+.approach-sub-block:not(:last-child) {
+  margin-bottom: 64px; }
+
+.testimonials__wrapper {
+  height: 1027px;
+  max-width: 1146px;
+  margin: 0 auto;
+  padding-top: 150px; }
+
+.testimonials__testimonials {
+  font-family: "Poppins-bold", sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 3px;
+  color: #c0cdd7;
+  text-transform: uppercase;
+  margin: 0 0 16px; }
+
+.testimonials__title {
+  font-family: "Poppins-Semibold", sans-serif;
+  font-size: 32px;
+  line-height: 150%;
+  margin: 0 0 85px; }
+
+.testimonials-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.testimonials-card {
+  padding: 32px;
+  width: 314px;
+  text-align: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+          box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+  border-radius: 24px; }
+  .testimonials-card__photo-block {
+    width: 250px;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 27px; }
+  .testimonials-card__image {
+    border-radius: 50%;
+    position: relative;
+    z-index: 1; }
+  .testimonials-card__decoration-blue {
+    height: 139px;
+    width: 55px;
+    border-radius: 500px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #56ccf2;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2; }
+  .testimonials-card__decoration-yellow {
+    height: 139px;
+    width: 55px;
+    border-radius: 500px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304; }
+  .testimonials-card__decoration-red {
+    height: 139px;
+    width: 55px;
+    border-radius: 500px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656; }
+  .testimonials-card__decoration-blue:first-child, .testimonials-card__decoration-yellow:first-child, .testimonials-card__decoration-red:first-child {
+    -webkit-transform: translate(50px, -50px) rotate(30deg);
+            transform: translate(50px, -50px) rotate(30deg); }
+  .testimonials-card__decoration-blue:last-child, .testimonials-card__decoration-yellow:last-child, .testimonials-card__decoration-red:last-child {
+    -webkit-transform: translate(-50px, 50px) rotate(30deg);
+            transform: translate(-50px, 50px) rotate(30deg); }
+  .testimonials-card__feedback {
+    font-family: "Open Sans-semi", sans-serif;
+    font-size: 13px;
+    line-height: 150%;
+    color: #6c788b;
+    margin: 0 0 16px; }
+  .testimonials-card__name {
+    font-family: "Open Sans-semi", sans-serif;
+    font-size: 13px;
+    line-height: 150%;
+    margin: 0 0 4px; }
+  .testimonials-card__workplace {
+    font-family: "Poppins-bold", sans-serif;
+    margin: 0;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #c0cdd7; }
+
+.vision {
+  height: 888px;
+  background-color: #fff;
+  padding-top: 200px;
+  position: relative; }
+  .vision__block {
+    width: 755px;
+    margin: 0 auto;
+    text-align: center; }
+  .vision__title {
+    font-family: "Poppins-Semibold", sans-serif;
+    font-size: 52px;
+    line-height: 150%;
+    color: #253757; }
+  .vision__text {
+    font-family: "Open Sans-semi", sans-serif;
+    font-size: 24px;
+    line-height: 150%;
+    color: #6c788b; }
+  .vision__btn {
+    background: #ff9c8e;
+    font-family: "Poppins-Semibold", sans-serif;
+    width: 226px;
+    border: none;
+    outline: none;
+    border-radius: 64px;
+    height: 56px;
+    color: #fff; }
+    .vision__btn:hover {
+      background-color: #ff7c6e; }
+  .vision__oval:nth-child(2) {
+    position: absolute;
+    width: 85px;
+    height: 34px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    border-radius: 500px;
+    border: 3px solid #ff9c8e;
+    background-color: transparent;
+    opacity: 0.8;
+    top: 92px;
+    left: 253px; }
+  .vision__oval:nth-child(3) {
+    position: absolute;
+    width: 45px;
+    height: 18px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    border-radius: 500px;
+    border: 3px solid #fde285;
+    background-color: transparent;
+    opacity: 0.8;
+    top: 92px;
+    left: 466px; }
+  .vision__oval:nth-child(4) {
+    position: absolute;
+    width: 67px;
+    height: 26.8px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    border-radius: 500px;
+    border: 4px solid #ace6f8;
+    background-color: transparent;
+    opacity: 0.8;
+    top: 370px;
+    left: 82px; }
+  .vision__oval:nth-child(5) {
+    position: absolute;
+    width: 143px;
+    height: 57.2px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    border-radius: 500px;
+    border: 5px solid #82eaa1;
+    background-color: transparent;
+    opacity: 0.8;
+    top: 283px;
+    left: 269px; }
+  .vision__oval:nth-child(6) {
+    position: absolute;
+    width: 45px;
+    height: 18px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    border-radius: 500px;
+    border: 5px solid #fde287;
+    background-color: transparent;
+    opacity: 0.8;
+    top: 465px;
+    left: 481px; }
+  .vision__oval:nth-child(7) {
+    position: absolute;
+    width: 94px;
+    height: 37.6px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    border-radius: 500px;
+    border: 4px solid #de84fd;
+    background-color: transparent;
+    opacity: 0.8;
+    top: 581px;
+    left: 131px; }
+  .vision__oval:nth-child(8) {
+    position: absolute;
+    width: 143px;
+    height: 57.2px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    border-radius: 500px;
+    border: 5px solid #82eaa1;
+    background-color: transparent;
+    opacity: 0.8;
+    top: 131px;
+    right: 215px; }
+  .vision__oval:nth-child(9) {
+    position: absolute;
+    width: 54px;
+    height: 21.6px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    border-radius: 500px;
+    border: 5px solid #de84fd;
+    background-color: transparent;
+    opacity: 0.8;
+    top: 110px;
+    right: 111px; }
+  .vision__oval:nth-child(10) {
+    position: absolute;
+    width: 87px;
+    height: 34.8px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    border-radius: 500px;
+    border: 3px solid #fde287;
+    background-color: transparent;
+    opacity: 0.8;
+    top: 277px;
+    right: 67px; }
+  .vision__oval:nth-child(11) {
+    position: absolute;
+    width: 86px;
+    height: 34.4px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    border-radius: 500px;
+    border: 3px solid #ff9c8e;
+    background-color: transparent;
+    opacity: 0.8;
+    top: 385px;
+    right: 315px; }
+  .vision__oval:nth-child(12) {
+    position: absolute;
+    width: 154px;
+    height: 61.6px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    border-radius: 500px;
+    border: 5px solid #ace6f8;
+    background-color: transparent;
+    opacity: 0.8;
+    top: 413px;
+    right: 143px; }
+  .vision__oval:nth-child(13) {
+    position: absolute;
+    width: 45px;
+    height: 18px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    border-radius: 500px;
+    border: 3px solid #de84fd;
+    background-color: transparent;
+    opacity: 0.8;
+    top: 514px;
+    right: 552px; }
 
 body {
   background: #f2f9ff;
