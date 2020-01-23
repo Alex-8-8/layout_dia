@@ -278,7 +278,7 @@
     .header-nav__link--active:hover::after, .header-nav__link--active:focus::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      top: 50px;
       width: 100%;
       height: 2px;
       background-color: #ff7c6e;
@@ -315,7 +315,7 @@
     .nav__link:focus::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      top: 30px;
       width: 100%;
       height: 2px;
       background-color: #ff7c6e;
@@ -447,6 +447,12 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; } }
+
+@media (max-height: 650px) {
+  .header .nav__item:not(:last-child) {
+    margin-bottom: 25px; }
+  .header-nav__link--active {
+    bottom: 40px; } }
 
 .welcome {
   display: -webkit-box;
@@ -1173,7 +1179,7 @@
     line-height: 150%;
     font-family: "Poppins-Semibold", sans-serif; }
   .footer-content__contact {
-    width: 362px; }
+    max-width: 360px; }
   .footer-content__call-us, .footer-content__visit-us, .footer-content__socials {
     font-family: "Poppins-bold", sans-serif;
     opacity: 0.5;
@@ -1237,6 +1243,8 @@
     .footer-form__input::placeholder {
       opacity: 0.7;
       color: #fff; }
+    .footer-form__input:focus {
+      border-bottom: 2px solid #fff; }
   .footer-form__message {
     margin-bottom: 80px; }
   .footer-form__btn {
@@ -1274,9 +1282,9 @@
 
 @media (max-width: 1050px) {
   .footer-form {
-    width: 400px; }
+    max-width: 400px; }
   .footer-content__contact {
-    width: 275px; }
+    max-width: 275px; }
   .footer-content__item:first-child {
     margin-right: 50px; } }
 
