@@ -148,6 +148,12 @@
   font-size: 14px;
   margin: 0; }
 
+.slider-list__item {
+  opacity: 0; }
+
+.showing {
+  opacity: 1; }
+
 .slider-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1295,8 +1301,6 @@
   .footer-form__message {
     margin-bottom: 80px; }
   .footer-form__btn {
-    text-align: center;
-    line-height: 56px;
     cursor: pointer;
     width: 226px;
     height: 56px;
